@@ -6,7 +6,7 @@
 /*   By: cmzayek <cmzayek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/26 20:18:03 by cmzayek           #+#    #+#             */
-/*   Updated: 2020/11/27 21:37:31 by cmzayek          ###   ########.fr       */
+/*   Updated: 2020/12/01 15:38:59 by cmzayek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int		ft_countwords(char const *s, char c)
 
 	i = 0;
 	count = 0;
-	if (s[i++] != c)
+	if (s[i] && s[i++] != c)
 		count++;
 	while (s[i])
 	{
